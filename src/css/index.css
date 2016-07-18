@@ -2,7 +2,7 @@
     margin-top: 1rem;
     text-align: center;
 }
-.g-header h1{
+.g-header h1 {
     margin: .2rem 0;
     font-size: 1rem;
     font-family: 'Indie Flower', cursive;
@@ -26,6 +26,7 @@
     box-sizing: border-box;
     border-radius: 50%;
     border: 5px solid #222;
+    animation: rotateFace 5s linear 0 infinite;
 }
 .face .eyes {
     display: inline-block;
@@ -55,5 +56,46 @@ svg {
     position: absolute;
     top: 3.8rem;
     right: 1rem;
-    transform: translate3d(0,0,0) rotateZ(-6deg);
+    transform: translate3d(0, 0, 0) rotateZ(-6deg);
+}
+
+@-webkit-keyframes rotateFace {
+    0% {
+        transform: translate3d(0,0,0) rotateZ(0)
+    }
+    100% {
+        transform: translate3d(0,0,0) rotateZ(360deg)
+    }
+}
+@-moz-keyframes rotateFace {
+    0% {
+        transform: translate3d(0,0,0) rotateZ(0)
+    }
+    100% {
+        transform: translate3d(0,0,0) rotateZ(360deg)
+    }
+}
+@-ms-keyframes rotateFace {
+    0% {
+        transform: translate3d(0,0,0) rotateZ(0)
+    }
+    100% {
+        transform: translate3d(0,0,0) rotateZ(360deg)
+    }
+}
+@-o-keyframes rotateFace {
+    0% {
+        transform: translate3d(0,0,0) rotateZ(0)
+    }
+    100% {
+        transform: translate3d(0,0,0) rotateZ(360deg)
+    }
+}
+@keyframes rotateFace {
+    0% {
+        transform: translate3d(0,0,0) rotateZ(0)
+    }
+    100% {
+        transform: translate3d(0,0,0) rotateZ(360deg)
+    }
 }
