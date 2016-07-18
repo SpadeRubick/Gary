@@ -14,3 +14,40 @@
     text-align: right;
     font-family: 'Galada', cursive;
 }
+.g-content {
+    margin-top: 1rem;
+    text-align: center;
+}
+.face {
+    display: inline-block;
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 5px solid #222;
+}
+.face .eyes {
+    display: inline-block;
+    position: absolute;
+    width: .6rem;
+    height: .8rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    border-radius: 50%;
+    background: #000;
+}
+.face .eyes:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    width: .3rem;
+    height: .35rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.face .eyes + .eyes {
+    left: 4.3rem;
+}

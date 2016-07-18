@@ -17,7 +17,14 @@
         <p class="">This is my own page for test, <br><span>——gary</span></p>
     </section>
     <section class="g-content">
-        <div class="smile"></div>
+        <div class="smile">
+            <div class="face">
+                <i class="eyes"></i>
+                <i class="eyes"></i>
+                <!-- <span class="mouth"></span> -->
+                <path d="M10 60 C 20 80, 40 80, 50 60" stroke="black" fill="transparent"/>
+            </div>
+        </div>
     </section>
     <script type="text/javascript">
         var dpr = window.devicePixelRatio || 1,
@@ -28,6 +35,10 @@
         // 动态写入样式
         document.documentElement.firstElementChild.appendChild(fontEl);
         fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
+
+        if (navigator.platform.indexOf('Win32') !== -1) {
+            document.getElementsByClassName('g-content')[0].setAttribute('display', 'none');
+        }
     </script>
 </body>
 
