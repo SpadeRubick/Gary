@@ -23,10 +23,13 @@
     position: relative;
     width: 6rem;
     height: 6rem;
-    box-sizing: border-box;
-    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     border: 5px solid #222;
-    animation: rotateFace 5s linear infinite;
+    -webkit-animation: rotateFace 5s linear infinite;
+            animation: rotateFace 5s linear infinite;
 }
 .face .eyes {
     display: inline-block;
@@ -35,7 +38,8 @@
     height: .8rem;
     top: 1.5rem;
     left: 1.5rem;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     background: #000;
 }
 .face .eyes:before {
@@ -46,7 +50,8 @@
     left: 1px;
     width: .3rem;
     height: .35rem;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     background: #fff;
 }
 .face .eyes + .eyes {
@@ -56,46 +61,27 @@ svg {
     position: absolute;
     top: 3.8rem;
     right: 1rem;
-    transform: translate3d(0, 0, 0) rotateZ(-6deg);
+    -webkit-transform: translate3d(0, 0, 0) rotateZ(-4deg);
+            transform: translate3d(0, 0, 0) rotateZ(-4deg);
 }
 
 @-webkit-keyframes rotateFace {
     0% {
-        transform: translate3d(0,0,0) rotateZ(0)
+        -webkit-transform: translate3d(0,0,0) rotateZ(0);
+                transform: translate3d(0,0,0) rotateZ(0)
     }
     100% {
-        transform: translate3d(0,0,0) rotateZ(360deg)
-    }
-}
-@-moz-keyframes rotateFace {
-    0% {
-        transform: translate3d(0,0,0) rotateZ(0)
-    }
-    100% {
-        transform: translate3d(0,0,0) rotateZ(360deg)
-    }
-}
-@-ms-keyframes rotateFace {
-    0% {
-        transform: translate3d(0,0,0) rotateZ(0)
-    }
-    100% {
-        transform: translate3d(0,0,0) rotateZ(360deg)
-    }
-}
-@-o-keyframes rotateFace {
-    0% {
-        transform: translate3d(0,0,0) rotateZ(0)
-    }
-    100% {
-        transform: translate3d(0,0,0) rotateZ(360deg)
+        -webkit-transform: translate3d(0,0,0) rotateZ(360deg);
+                transform: translate3d(0,0,0) rotateZ(360deg)
     }
 }
 @keyframes rotateFace {
     0% {
-        transform: translate3d(0,0,0) rotateZ(0)
+        -webkit-transform: translate3d(0,0,0) rotateZ(0);
+                transform: translate3d(0,0,0) rotateZ(0)
     }
     100% {
-        transform: translate3d(0,0,0) rotateZ(360deg)
+        -webkit-transform: translate3d(0,0,0) rotateZ(360deg);
+                transform: translate3d(0,0,0) rotateZ(360deg)
     }
 }
