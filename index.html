@@ -27,7 +27,7 @@
         document.documentElement.setAttribute('data-dpr', dpr);
         // 动态写入样式
         document.documentElement.firstElementChild.appendChild(fontEl);
-        fontEl.innerHTML = 'html{font-size:' + (rem > 77 ? 32 : rem) + 'px!important;}';
+        fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
     </script>
 </body>
 

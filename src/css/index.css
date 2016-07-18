@@ -4,13 +4,13 @@
 }
 .g-header h1{
     margin: .2rem 0;
-    font-size: 64px;
+    font-size: 1rem;
     font-family: 'Indie Flower', cursive;
 }
 .g-header h1 + p {
     display: inline-block;
     margin: .2rem 0;
-    font-size: 24px;
+    font-size: .6rem;
     text-align: right;
     font-family: 'Galada', cursive;
 }
