@@ -22,7 +22,9 @@
                 <i class="eyes"></i>
                 <i class="eyes"></i>
                 <!-- <span class="mouth"></span> -->
-                <path d="M10 60 C 20 80, 40 80, 50 60" stroke="black" fill="transparent"/>
+                <svg>
+                    <path d="M10 60 C 20 80, 40 80, 50 60" stroke="#222" stroke-width="5" fill="transparent"/>
+                </svg>
             </div>
         </div>
     </section>
@@ -35,9 +37,18 @@
         // 动态写入样式
         document.documentElement.firstElementChild.appendChild(fontEl);
         fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
+        var svg = document.getElementsByTagName('svg')[0],
+            path = svg.getElementsByTagName('path')[0],
+            dTxt = '';
+        svg.setAttribute('width', rem*3);
+        svg.setAttribute('height', rem);
+        dTxt = 'M10 10 C ' + rem + ' ' + rem + ', ' + 2*rem + ' ' + rem + ', ' + (rem*3-10) + ' 10';
+        path.setAttribute('d', dTxt);
+
 
         if (navigator.platform.indexOf('Win32') !== -1) {
-            document.getElementsByClassName('g-content')[0].setAttribute('display', 'none');
+            var _remove_target = document.getElementsByClassName('g-content')[0];
+            _remove_target.parentNode.removeChild(_remove_target);
         }
     </script>
 </body>
