@@ -39,6 +39,7 @@
         fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
         var svg = document.getElementsByTagName('svg')[0],
             path = svg.getElementsByTagName('path')[0],
+            _remove_target = document.getElementsByClassName('g-content')[0],
             dTxt = '';
         svg.setAttribute('width', rem*3);
         svg.setAttribute('height', rem);
@@ -46,10 +47,9 @@
         path.setAttribute('d', dTxt);
 
 
-        if (navigator.platform.indexOf('Win32') !== -1) {
-            var _remove_target = document.getElementsByClassName('g-content')[0];
+        /*if (navigator.platform.indexOf('Win32') !== -1) {
             _remove_target.parentNode.removeChild(_remove_target);
-        }
+        }*/
     </script>
 </body>
 
