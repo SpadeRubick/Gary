@@ -14,8 +14,21 @@
 <body>
     <section class="g-header">
         <h1 class="">Spade Rubick</h1>
-        <h2 class="">This is my own page for test</h2>
+        <p class="">This is my own page for test, <br><span>——gary</span></p>
     </section>
+    <section class="g-content">
+        <div class="smile"></div>
+    </section>
+    <script type="text/javascript">
+        var dpr = window.devicePixelRatio || 1,
+            fontEl = document.createElement('style'),
+            rem = document.documentElement.clientWidth / 10;
+        // 设置data-dpr属性，留作的css hack之用
+        document.documentElement.setAttribute('data-dpr', dpr);
+        // 动态写入样式
+        document.documentElement.firstElementChild.appendChild(fontEl);
+        fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
+    </script>
 </body>
 
 </html>
