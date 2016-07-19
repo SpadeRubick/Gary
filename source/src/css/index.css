@@ -19,23 +19,19 @@ html {
 
 
 .g-header {
-    margin-top: 1rem;
+    margin-top: 5rem;
     text-align: center;
 }
 .g-header h1 {
-    margin: .2rem 0;
-    font-size: 1rem;
     font-family: 'Indie Flower', cursive;
 }
 .g-header h1 + p {
     display: inline-block;
-    margin: .2rem 0;
-    font-size: .6rem;
     text-align: right;
     font-family: 'Galada', cursive;
 }
 .g-content {
-    margin-top: 1rem;
+    margin-top: 3rem;
     text-align: center;
 }
 .face {
@@ -48,8 +44,8 @@ html {
     -webkit-border-radius: 50%;
             border-radius: 50%;
     border: 5px solid #222;
-    -webkit-animation: rotateFace 5s linear infinite;
-            animation: rotateFace 5s linear infinite;
+    /* -webkit-animation: rotateFace 5s linear infinite;
+            animation: rotateFace 5s linear infinite; */
 }
 .face .eyes {
     display: inline-block;
@@ -57,7 +53,7 @@ html {
     width: .6rem;
     height: .8rem;
     top: 1.5rem;
-    left: 1.5rem;
+    left: 1.3rem;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     background: #000;
@@ -75,15 +71,26 @@ html {
     background: #fff;
 }
 .face .eyes + .eyes {
-    left: 4.3rem;
+    left: 3.8rem;
 }
-svg {
+.face .mouth {
+    display: inline-block;
+    position: absolute;
+    width: 2rem;
+    height: 1rem;
+    top: 3.5rem;
+    right: 1.7rem;
+    border-bottom: .2rem solid #222;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+/* svg {
     position: absolute;
     top: 3.8rem;
     right: 1rem;
     -webkit-transform: translate3d(0, 0, 0) rotateZ(-4deg);
             transform: translate3d(0, 0, 0) rotateZ(-4deg);
-}
+} */
 
 @-webkit-keyframes rotateFace {
     0% {
