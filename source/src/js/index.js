@@ -26,7 +26,7 @@ function touch(event) {
 	var event = event || window.event,
 		eye1 = document.getElementsByClassName('eyes')[0],
 		eye2 = document.getElementsByClassName('eyes')[1],
-		//中心坐标
+		//页面中心坐标
 		oX = Math.round(document.documentElement.clientWidth/2),
 		oY = Math.round(document.documentElement.clientHeight/2),
 		//touch坐标
