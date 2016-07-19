@@ -35,19 +35,19 @@
         x = Math.round((tX - oX) / stepX);
         y = Math.round((tY - oY) / stepY);
         deg = Math.round((tX - oX) / stepX);
-        deg3D = (tY > oY ? 180 : 0);
-        mouthY = (tY > oY ? -1 : 0);
+        deg3D = (tY > oY ? 180 : 0);//deg
+        mouthY = (tY > oY ? -1 : 0);//rem
 
         switch (event.type) {
             case 'touchstart':
                 eye1.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
                 eye2.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
-                mouth.style.transform = 'rotateZ(' + deg + 'deg) rotate3d(1, 0, 0, ' + deg3D + 'deg)' + 'translateY(' + mouthY + 'rem)';
+                mouth.style.transform = 'rotateZ(' + deg + 'deg)';
                 break;
             case 'touchmove':
                 eye1.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
                 eye2.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
-                mouth.style.transform = 'rotateZ(' + deg + 'deg) rotate3d(1, 0, 0, ' + deg3D + 'deg)' + 'translateY(' + mouthY + 'rem)';
+                mouth.style.transform = 'rotateZ(' + deg + 'deg)';
                 break;
         }
     }
