@@ -39,8 +39,8 @@ function touch(event) {
 		x = 0,
 		y = 0;
 	//计算偏移量
-	x = Math.round((oX - tX)/setpX);
-	y = Math.round((oY - tY)/setpY);
+	x = Math.round((oX - tX)/stepX);
+	y = Math.round((oY - tY)/stepY);
 
 	switch(event.type) {
 		case 'touchstart':
