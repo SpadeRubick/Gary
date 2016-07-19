@@ -47,6 +47,7 @@ function touch(event) {
 		x = 0,
 		y = 0,
 		deg = 0;
+	event.preventDefault();
 	//计算偏移量
 	x = Math.round((tX - oX)/stepX);
 	y = Math.round((tY - oY)/stepY);
