@@ -41,7 +41,7 @@ function touch(event) {
 		tX = Math.round(event.touches[0].clientX),
 		tY = Math.round(event.touches[0].clientY),
 		//步长
-		stepX = Math.round(oX/10),
+		stepX = Math.round(oX/20),
 		stepY = Math.round(oY/15),
 		//偏移量
 		x = 0,
