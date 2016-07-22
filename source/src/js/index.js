@@ -25,7 +25,7 @@
     /*sad*/
     sad.addEventListener('click', function() {
     	hasClass(moodSwitch, 'checked') && removeClass(moodSwitch, 'checked');
-    	hasClass(face, 'sad') && addClass(face, 'sad');
+    	hasClass(face, 'sad') && removeClass(face, 'sad');
     }, false);
 
     /*touch事件*/
